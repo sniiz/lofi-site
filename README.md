@@ -1,2 +1,3 @@
 # lofi-site
-a website to give you a random lofi playlist
+
+a quick site i made that gives you a random lofi playlist
