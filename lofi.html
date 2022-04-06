@@ -1,0 +1,122 @@
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>✨ lofi</title>
+</head>
+<style>
+    body {
+        background: linear-gradient(45deg,
+                #c869c9,
+                #7bb3fd,
+                #a77dfb,
+                #6979c9,
+                #69bec9);
+        background-size: 400% 400%;
+        animation: gradient 100s infinite;
+        height: 100vh;
+    }
+
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+</style>
+
+<body style="background-color: black">
+    <div style="
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            opacity: 0.7;
+            background-color: black;
+        ">
+        <h1 style="
+                color: gray;
+                font-weight: 300;
+                font-style: italic;
+                font-size: 200%;
+                font-family: 'CourierNew', Courier, monospace;
+                position: absolute;
+                left: 50%;
+                text-align: center;
+                top: 10%;
+                transform: translate(-50%, 50%);
+            ">
+            ✨ lofi ✨
+        </h1>
+        <h3 style="
+                color: gray;
+                font-weight: 100;
+                font-style: italic;
+                font-size: 100%;
+                font-family: 'CourierNew', Courier, monospace;
+                position: absolute;
+                left: 50%;
+                text-align: center;
+                top: 20%;
+                transform: translate(-50%, 50%);
+            ">
+            🔄 refresh for a different playlist 🔄
+        </h3>
+        <h3 style="
+                color: gray;
+                font-weight: 100;
+                font-style: italic;
+                font-size: 100%;
+                font-family: 'CourierNew', Courier, monospace;
+                position: absolute;
+                left: 50%;
+                text-align: center;
+                bottom: 10%;
+                transform: translate(-50%, 50%);
+            ">
+            site by <a target="_blank" rel="noopener noreferrer" href="https://linktr.ee/sniiz" style="color: gray">haley</a>
+        </h3>
+        <script>
+            lofiVids = [
+                "1oahTaVIQvk",
+                "5qap5aO4i9A",
+                "DWcJFNfaw9c",
+                "TWTV4T3yxzs",
+                "n61ULEU7CO0",
+                "MtT5_PgLJlY",
+                "Xec3S-I5TcE",
+                "C82Fpi8f4k4",
+                "iSslJKW950g",
+                "6Mvcn0YUVMg"
+            ];
+            document.write(
+                `<iframe
+                    width="30%"
+                    height="30%"
+                    style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);"
+                    src="https://www.youtube.com/embed/${lofiVids[Math.floor(Math.random() * lofiVids.length)]}"
+                    frameborder="0"
+                </iframe>`
+            );
+        </script>
+        <!-- <iframe
+            width="30%"
+            height="30%"
+            style="
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            "
+            src="https://www.youtube.com/embed/1oahTaVIQvk"
+            frameborder="0"
+        ></iframe> -->
+    </div>
+</body>
